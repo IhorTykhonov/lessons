@@ -1,0 +1,28 @@
+
+body{
+   background-color: black;
+}
+*{
+   color: darkorchid;
+}
+h1{
+   color: blue;
+}
+li{
+   color: yellowgreen;
+}
+.section-title{
+   color: red;
+}
+.text {
+   color: aqua;
+}
+.button {
+   color: blueviolet;
+}
+#text-history{
+   color: magenta;
+}
+#title-culture{
+   color: green;
+}
