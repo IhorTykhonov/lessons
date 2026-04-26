@@ -2,7 +2,6 @@ body {
    font-family: "InterDisplay", sans-serif;
    font-weight: 400;
    font-style: normal;
-   font-display: swap;
    background-color: #161616;
    font-size: 16px;
    color: #fff;
@@ -65,10 +64,9 @@ a:hover::after {
    font-family: "InterDisplay", sans-serif;
    font-weight: 500;
    font-style: normal;
-   font-display: swap;
    color: aquamarine;
 }
-.header__list h3 {
+.header__list h2 {
    color: aquamarine;
    margin-bottom: 15px;
 }
