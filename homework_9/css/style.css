@@ -1,0 +1,335 @@
+body {
+   font-family: "InterDisplay", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+   background-color: #161616;
+   font-size: 16px;
+   color: #fff;
+   word-spacing: normal;
+}
+[class*="__container"] {
+   max-width: 1230px;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin: 0 auto;
+}
+
+li {
+   margin-bottom: 5px;
+}
+a {
+   text-decoration: none;
+   position: relative;
+}
+
+a::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -2px;
+   width: 0;
+   height: 2px;
+   background: aquamarine;
+   transition: width 0.3s;
+}
+
+a:hover::after {
+   width: 100%;
+}
+/*-------------------------------------------*/ /*header*/ /*--------------------------------------*/
+.header__container {
+   margin-bottom: 20px;
+   border-bottom: 1px solid aquamarine;
+   padding-bottom: 10px;
+}
+.header__title {
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+   position: relative;
+   padding-bottom: 10px;
+}
+.header__title::after {
+   content: "";
+   position: absolute;
+   left: 40%;
+   bottom: 0;
+   width: 20%;
+   height: 1px;
+   background: aquamarine;
+}
+.header__title span {
+   font-family: "InterDisplay", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+   color: aquamarine;
+}
+.header__list h3 {
+   color: aquamarine;
+   margin-bottom: 15px;
+}
+.header__list ul {
+   list-style: none;
+   padding-left: 0;
+   margin-left: 0;
+}
+.header__list li {
+   margin-bottom: 5px;
+}
+.header__list a:hover {
+   color: aquamarine;
+}
+.header__list a:active {
+   color: rgb(26, 151, 109);
+}
+/*-------------------------------*/ /*БЕМ-блок,елемент,модефікатор,мікс*/ /*-----------------------------------------*/
+.block__container {
+   margin-bottom: 40px;
+   border-bottom: 1px solid aquamarine;
+   padding-bottom: 20px;
+}
+.block__title {
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+   position: relative;
+   padding-bottom: 10px;
+}
+.block__title::after {
+   content: "";
+   position: absolute;
+   left: 45%;
+   bottom: 0;
+   width: 10%;
+   height: 1px;
+   background: aquamarine;
+}
+.block__title span {
+   color: aquamarine;
+}
+.block__text {
+   margin-bottom: 15px;
+}
+.block__sup-title {
+   margin-bottom: 15px;
+   color: aquamarine;
+}
+
+/*--------------------------------------------------*/ /*часті слова*/ /*----------------------------------------------------*/
+.words__container {
+   margin-bottom: 40px;
+   border-bottom: 1px solid aquamarine;
+   padding-bottom: 20px;
+}
+.words__title {
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+   position: relative;
+   padding-bottom: 10px;
+}
+.words__title::after {
+   content: "";
+   position: absolute;
+   left: 45%;
+   bottom: 0;
+   width: 10%;
+   height: 1px;
+   background: aquamarine;
+}
+.words__title span {
+   color: aquamarine;
+}
+.words__text span {
+   color: aquamarine;
+}
+/*----------------------------------*/ /*домашня робота з макету*/ /*---------------------------------------------*/
+
+.blog-section__page {
+   height: 800px;
+   display: flex;
+}
+.blog-section__header {
+   margin-bottom: 60px;
+}
+.blog-section__image {
+   width: 62px;
+   height: 62px;
+   margin: 0 auto;
+}
+.blog-section__text {
+   font-size: 16px;
+   width: 130px;
+   margin: 0 auto;
+   padding: 8px 0px 12px 0px;
+   color: #ffffff38;
+}
+.blog-section__title {
+   font-size: 52px;
+   width: 45%;
+   height: 60px;
+   margin: 0 auto;
+}
+.blog-section-product {
+   margin-right: 30px;
+}
+.blog-section-product__section {
+   height: 720px;
+   width: 690px;
+   padding: 32px;
+   background: #1e1e1f;
+   border-radius: 20px;
+}
+.blog-section-product__image {
+   height: 372px;
+   width: 624px;
+   margin: 0px 0px 32px 0px;
+}
+.blog-section-product__image img {
+   border-radius: 14px;
+}
+.blog-section-product__block {
+   margin-bottom: 20px;
+   display: flex;
+}
+.blog-section-product__sup-title {
+   font-size: 14px;
+   width: 135px;
+   height: 36px;
+   border-radius: 8px;
+   padding: 10px 13px 8px 13px;
+   background: rgba(255, 255, 255, 0.066);
+}
+.blog-section-product__data {
+   justify-content: center;
+   display: flex;
+   margin-left: 350px;
+   padding-top: 5px;
+}
+.blog-section-product__data img {
+   margin-right: 4px;
+   width: 20px;
+   height: 20px;
+}
+.blog-section-product__title {
+   letter-spacing: -0.32px;
+   line-height: 44px;
+   font-weight: 500;
+   font-size: 32px;
+   margin-bottom: 12px;
+}
+.blog-section-product__text {
+   width: 540px;
+   height: 48px;
+   margin-bottom: 24px;
+   line-height: 24px;
+   color: #ffffffb4;
+}
+.blog-section-product__button {
+   display: flex;
+}
+.blog-section-product__button img {
+   margin-left: 10px;
+}
+.blog-section-product__button a {
+   padding-top: 3px;
+   font-weight: 500;
+}
+.blog-section-items {
+   width: 482px;
+   height: 742px;
+   display: flex;
+   flex-direction: column;
+}
+.blog-section-list {
+   border-radius: 12px;
+   width: 482px;
+   height: 238px;
+   background: #1e1e1f;
+   margin-bottom: 30px;
+}
+.blog-section-list__sup-title {
+   font-size: 14px;
+   width: 120px;
+   height: 36px;
+   padding: 10px 13px 8px 13px;
+   border-radius: 8px;
+   margin: 32px 0px 12px 32px;
+   background: rgba(255, 255, 255, 0.066);
+}
+.blog-section-list__title {
+   font-size: 24px;
+   margin: 0px 32px 12px 32px;
+}
+.blog-section-list__text {
+   margin: 0px 32px 26px 32px;
+   color: #ffffffb4;
+}
+.faq-section__container {
+   height: 830px;
+}
+.faq-section__header {
+   margin-bottom: 20px;
+}
+.faq-section__img {
+   width: 53px;
+   height: 60px;
+   margin: 0 auto;
+}
+.faq-section__text {
+   font-size: 16px;
+   width: 130px;
+   margin: 0 auto;
+   padding: 8px 0px 12px 0px;
+   color: #ffffff38;
+}
+.faq-section__title {
+   font-size: 52px;
+   width: 55%;
+   height: 60px;
+   margin: 0 auto;
+}
+.faq-section__items {
+   display: flex;
+   flex-direction: column;
+}
+.faq-section__item {
+   display: flex;
+   font-size: 20px;
+   width: 1000px;
+   height: 76px;
+   background: #1e1e1f;
+   margin: 0 auto;
+   margin-bottom: 24px;
+   border-radius: 10px;
+}
+.faq-section__item img {
+   width: 32px;
+   height: 32px;
+   margin: 22px 24px 22px 0px;
+}
+.faq-section__item p {
+   width: 550px;
+   margin: 24px 363px 24px 32px;
+}
+/*----------------------------------------*/ /*footer*/ /*------------------------------------------*/
+.footer__container {
+   font-size: 24px;
+   padding: 20px 0px 20px 0px;
+   border-top: 1px solid aquamarine;
+}
+
+.footer__item a:hover {
+   color: aquamarine;
+}
+.footer__item a:active {
+   color: rgb(26, 151, 109);
+}

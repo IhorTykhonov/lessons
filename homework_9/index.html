@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Home work 9</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__container">
+         <div class="header__title">
+            <h1>Методологія <span>БЕМ</span></h1>
+         </div>
+         <div class="header__list">
+            <h3>Зміст:</h3>
+            <ul>
+               <li><a href="#bem-block">БЕМ-Блок</a></li>
+               <li><a href="#bem-element">БЕМ-Елемент</a></li>
+               <li><a href="#bem-modifier">БЕМ-Модифікатор</a></li>
+               <li><a href="#bem-mix">БЕМ-Мікс</a></li>
+               <li><a href="#words">Часті слова</a></li>
+               <li><a href="#">Приклади</a></li>
+               <li><a href="#homework">Домашня робота з макету</a></li>
+            </ul>
+         </div>
+      </div>
+   </header>
+   <main class="page">
+
+      <!--БЕМ-Блок-->
+      <div class="block" id="bem-block">
+         <div class="block__container">
+            <div class="block__header">
+               <div class="block__title title">
+                  <h2><span>БЕМ</span>-Блок</h2>
+               </div>
+               <div class="block__text">
+                  <p> Будь-який БЕМ-Блок стає компонентом
+                     Будь-який компонент обов'язково має бути побудований як БЕМ-Блок</p>
+                  <p> НЕЗАЛЕЖНИЙ, САМОДОСТАТНІЙ об'єкт.
+                     НЕ має впливати на оточення (сусідні об'єкти).</p>
+               </div>
+            </div>
+            <div class="block__items">
+               <div class="block__sup-title">
+                  <h3>І'мя класу БЕМ-блоку:</h3>
+               </div>
+               <div class="block__list">
+                  <ul>
+                     <li>І'мя класу має відповідати змісту або конструкції БЕМ-блоку.
+                        Перевірочне питання - "Що це?"</li>
+                     <li>Англійска мова (Латиниця)</li>
+                     <li>Нижній регістр</li>
+                     <li>Якщо слів декілька, розділяємо дефісом (-).</li>
+                     <li>При формуванні імені не має бути ієрархії.</li>
+                  </ul>
+               </div>
+               <div class="block__text">
+                  <p> Дозволяється вкладення будь якого рівня та будь-якої кількості
+                     БЕМ-блоків один в одного.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--БЕМ-Елемент-->
+      <div class="block" id="bem-element">
+         <div class="block__container">
+            <div class="block__header">
+               <div class="block__title title">
+                  <h2><span>БЕМ</span>-Елемент</h2>
+               </div>
+               <div class="block__text">
+                  <p>ЗАЛЕЖНИЙ об'єкт від СВОГО БЕМ-блоку
+                     ЗАВЖДИ знаходиться всередені СВОГО БЕМ-блоку (вкладений)
+                     МОЖЕ впливати на оточення (сусідні об'єкти).</p>
+               </div>
+            </div>
+            <div class="block__items">
+               <div class="block__sup-title">
+                  <h3>І'мя класу БЕМ-елементу:</h3>
+               </div>
+               <div class="block__list">
+                  <ul>
+                     <li>ЗАВЖДИ починається з імені першого в ієрархії
+                        батьківського БЕМ-блоку
+                        і відокремлюється двома підкресленнями (__).</li>
+                     <li>І'мя має відповідати змісту або конструкції блоку.
+                        Перевірочне питання - "Що це?"</li>
+                     <li>Англійска мова (Латиниця)</li>
+                     <li>Нижній регістр</li>
+                     <li>Якщо слів декілька, розділяємо дефісом (-).</li>
+                     <li>При формуванні імені не має бути ієрархії.</li>
+                  </ul>
+               </div>
+               <div class="block__text">
+                  <p>БЕМ-елементи можна вкладати в інші БЕМ-елементи свого БЕМ-блоку</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!--БЕМ-Модифікатор-->
+      <div class="block" id="bem-modifier">
+         <div class="block__container">
+            <div class="block__header">
+               <div class="block__title title">
+                  <h2><span>БЕМ</span>-Модифікатор</h2>
+               </div>
+               <div class="block__text">
+                  <p> Дозволяє вносити відмінності
+                     для БЕМ-блоків або БЕМ-елементів
+                     МОЖЕ впливати на оточення (сусідні об'єкти)</p>
+               </div>
+            </div>
+            <div class="block__items">
+               <div class="block__sup-title">
+                  <h3> І'мя класу БЕМ-модифікатора:</h3>
+               </div>
+               <div class="block__list">
+                  <ul>
+                     <li>ДОДАЄТЬСЯ до існуючого БЕМ-класу блоку або елементу.</li>
+                     <li>ЗАВЖДИ починається з існуючого БЕМ-класу блоку або елементу
+                        і відокремлюється подвійним дфісом (--)</li>
+                     <li>І'мя має відповідати модифікаціям.
+                        Перевірочне питання - "Який? Що змінено?"</li>
+                     <li>Англійска мова (Латиниця)</li>
+                     <li>Нижній регіст</li>
+                     <li>Якщо слів декілька, розділяємо дефісом (-).</li>
+                     <li>При формуванні імені не має бути ієрархії</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- БЕМ-Мікс -->
+      <div class="block" id="bem-mix">
+         <div class="block__container">
+            <div class="block__header">
+               <div class="block__title title">
+                  <h2><span>БЕМ</span>-Мікс</h2>
+               </div>
+               <div class="block__text">
+                  <p> Після того як ви опануєте блок елемент модифікатор,
+                     саме час використовувати мікси</p>
+                  <p> Мікс - це одночасне використання і БЕМ-блоку
+                     і БЕМ-елементу для одного об'єкту.</p>
+               </div>
+            </div>
+            <div class="block__items">
+               <div class="block__sup-title">
+                  <h3>Переваги міксу:</h3>
+               </div>
+               <div class="block__list">
+                  <ul>
+                     <li>Вивільнення зрозумілих слів для нових елементів</li>
+                     <li>Можливість викорістання CSS-властивостей, які впливають на оточення, фактично для БЕМ-блоку
+                        (БЕМ-елемент в ролі модифікатора)</li>
+                     <li>Паралельне відокремлення певної структури в БЕМ-блок</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Часті слова -->
+      <div class="words" id="words">
+         <div class="words__container">
+            <div class="words__title">
+               <h2>Часті <span>слова</span></h2>
+            </div>
+            <div class="words__text">
+               <p>
+                  <span>container</span> - обмежуючий контейнер (block__container)<br>
+                  <span>body, content</span> - головна частина блоку (block__body)<br>
+                  <span>row</span> - рядок<br>
+                  <span>column</span> - колонка<br>
+                  <span>link</span> - посилання<br>
+                  <span>title</span> - заголовок<br>
+                  <span>sub-title</span>- підзаголовок<br>
+                  <span>label</span> - ще заголовок<br>
+                  <span>text</span> - текст<br>
+                  <span>list</span> - список<br>
+                  <span>items</span> - багато якихось елементів<br>
+                  <span>item</span> - будь-що<br>
+                  <span>menu</span> - меню<br>
+                  <span>block</span> - блок<br>
+                  <span>button</span> - кнопка<br>
+                  <span>picture, image, img</span> - зображення / картинка<br>
+                  <span>section</span> - секція<br>
+                  <span>article</span> - стаття<br>
+                  <span>unit</span> - одиниця<br>
+                  <span>actions, action</span> - дія<br>
+                  <span>value</span> - значення<br>
+                  <span>search</span> - пошук<br>
+                  <span>form</span> - форма<br>
+                  <span>page</span> - сторінка<br>
+                  <span>box</span> - коробка / блок<br>
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <!--Домашня робота з макету-->
+      <div class="blog-section" id="homework">
+         <div class="blog-section__container">
+            <div class="blog-section__header">
+               <div class="blog-section__image">
+                  <img src="img/image1.svg.png" alt="картинка">
+               </div>
+               <div class="blog-section__text">
+                  <p>BLOG SECTION</p>
+               </div>
+               <div class="blog-section__title">
+                  <h2>Read my latest articles</h2>
+               </div>
+            </div>
+            <div class="blog-section__page">
+               <div class="blog-section-product">
+                  <div class="blog-section-product__section">
+                     <div class="blog-section-product__image">
+                        <img src="img/image.jpg" alt="картинка">
+                     </div>
+                     <div class="blog-section-product__block">
+                        <div class="blog-section-product__sup-title">
+                           <h3>DEVELOPMENT</h3>
+                        </div>
+                        <div class="blog-section-product__data">
+                           <img src="img/image2.png" alt="календар">
+                           <p>March 20, 2024</p>
+                        </div>
+                     </div>
+                     <div class="blog-section-product__title">
+                        <h2>Approach to eco-friendly product
+                           development</h2>
+                     </div>
+                     <div class="blog-section-product__text">
+                        <p>Leverage agile by the way frameworks to provide a for high level in the most
+                           important overviews.</p>
+                     </div>
+                     <div class="blog-section-product__button">
+                        <a href="#">Read More</a>
+                        <img src="img/image3.png" alt="стрілка">
+                     </div>
+                  </div>
+               </div>
+               <div class="blog-section-items">
+                  <div class="blog-section-list">
+                     <div class="blog-section-list__item">
+                        <div class="blog-section-list__sup-title">
+                           <h3>DESIGN</h3>
+                        </div>
+                        <div class="blog-section-list__title">
+                           <h2>How Raven's designs are changing the
+                              game</h2>
+                        </div>
+                        <div class="blog-section-list__text">
+                           <p>Leverage agile by the way frameworks to provide a for high
+                              level in the most important overviews.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="blog-section-list">
+                     <div class="blog-section-list__item">
+                        <div class="blog-section-list__sup-title">
+                           <h3>MARKETING</h3>
+                        </div>
+                        <div class="blog-section-list__title">
+                           <h2>Prototyping secrets revealed of creation</h2>
+                        </div>
+                        <div class="blog-section-list__text">
+                           <p>Leverage agile by the way frameworks to provide a for high
+                              level in the most important overviews.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="blog-section-list">
+                     <div class="blog-section-list__item">
+                        <div class="blog-section-list__sup-title">
+                           <h3>DESIGN</h3>
+                        </div>
+                        <div class="blog-section-list__title">
+                           <h2>How Raven's designs are changing the
+                              game</h2>
+                        </div>
+                        <div class="blog-section-list__text">
+                           <p>Leverage agile by the way frameworks to provide a for high
+                              level in the most important overviews.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="faq-section">
+         <div class="faq-section__container">
+            <div class="faq-section__header">
+               <div class="faq-section__img">
+                  <img src="img/image4.png" alt="картинка">
+               </div>
+               <div class="faq-section__text">
+                  <p>F.A.Q. SECTION</p>
+               </div>
+               <div class="faq-section__title">
+                  <h2>Frequently asked questions</h2>
+               </div>
+            </div>
+            <div class="faq-section__body">
+               <div class="faq-section__items">
+                  <div class="faq-section__item">
+                     <p>How does Raven approach the design process?</p>
+                     <img src="img/image5.png" alt="стрілочка вниз">
+                  </div>
+                  <div class="faq-section__item">
+                     <p>What types of products does Raven specialize in designing?</p>
+                     <img src="img/image5.png" alt="стрілочка вниз">
+                  </div>
+                  <div class="faq-section__item">
+                     <p>Can Raven help with prototyping and testing product ideas?</p>
+                     <img src="img/image5.png" alt="стрілочка вниз">
+                  </div>
+                  <div class="faq-section__item">
+                     <p>How does Raven ensure designs are ready for manufacturing?</p>
+                     <img src="img/image5.png" alt="стрілочка вниз">
+                  </div>
+                  <div class="faq-section__item">
+                     <p>Is Raven's design process sustainable?</p>
+                     <img src="img/image5.png" alt="стрілочка вниз">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer class="footer">
+      <div class="footer__container">
+         <div class="footer__item">
+            <a href="#top"><span>На</span> гору!</a>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
