@@ -253,6 +253,10 @@ a:hover::after {
    height: 238px;
    background: #1e1e1f;
    margin-bottom: 30px;
+   transition: all 0.3s ease;
+}
+.blog-section-list:hover {
+   background-color: #f24e1e;
 }
 .blog-section-list__sup-title {
    font-size: 14px;
@@ -308,6 +312,7 @@ a:hover::after {
    margin: 0 auto;
    margin-bottom: 24px;
    border-radius: 10px;
+   transition: all 0.3s ease;
 }
 .faq-section__item img {
    width: 32px;
@@ -317,6 +322,9 @@ a:hover::after {
 .faq-section__item p {
    width: 550px;
    margin: 24px 363px 24px 32px;
+}
+.faq-section__item:hover {
+   background-color: #f24e1e;
 }
 /*----------------------------------------*/ /*footer*/ /*------------------------------------------*/
 .footer__container {
