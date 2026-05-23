@@ -96,21 +96,38 @@ body {
 #section-left {
 	display: flex;
 }
-#margin {
+#margin-a {
 	margin: 20px;
 }
-#margin-left {
+#margin-b {
+	margin: 20px;
+}
+#margin-left-a {
 	width: 100%;
 	margin-left: 50px;
 }
-#margin-bottom {
+#margin-left-b {
+	width: 100%;
+	margin-left: 50px;
+}
+#margin-bottom-a {
 	margin-bottom: 20px;
 }
-#margin-right {
+#margin-bottom-b {
+	margin-bottom: 20px;
+}
+#margin-right-a {
 	width: 100%;
 	margin-right: 50px;
 }
-#margin-top {
+#margin-right-b {
+	width: 100%;
+	margin-right: 50px;
+}
+#margin-top-a {
+	margin-top: 20px;
+}
+#margin-top-b {
 	margin-top: 20px;
 }
 /*---------------------------------collection---------------------------------*/
